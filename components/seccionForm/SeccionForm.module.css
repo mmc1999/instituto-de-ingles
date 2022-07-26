@@ -1,14 +1,16 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffd89d;
-    padding: 10px;
-    width: 100%;
+.seccionPrincipal {
+    background-color: #fdefe4;
+    padding: 20px;
 }
 .divLogo {
     display: flex;
     gap: 5px;
+}
+.titleForm {
+    text-align: center;
+    font-size: 25px;
+    max-width: 400px;
+    font-weight: 500;
 }
 .logo {
     background-color: transparent;

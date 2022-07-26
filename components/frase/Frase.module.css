@@ -1,0 +1,23 @@
+.seccionPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    max-width: 400px;
+    margin: 0% auto;
+}
+.seccionPrincipal p {
+    text-align: center;
+    color: #ffce84;
+}
+.fraseMotivadora {
+    font-size: 20px;
+    font-weight: 600;
+}
+.iconoClever {
+    width: 50px;
+    border-radius: 26px;
+}
+.repetirFraseEspañol {
+    font-weight: 500;
+}
