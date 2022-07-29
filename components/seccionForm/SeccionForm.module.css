@@ -5,11 +5,11 @@
 .divLogo {
     display: flex;
     gap: 5px;
+    margin-bottom: 20px;
 }
 .titleForm {
     text-align: center;
     font-size: 25px;
-    max-width: 400px;
     font-weight: 500;
 }
 .logo {
@@ -30,4 +30,30 @@
     font-size: 11px;
     font-style: italic;
     margin: 0px;
+}
+.divAbajoMapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.divDirecciones {
+    width: 100%;
+    word-wrap: break-word;
+}
+.palabrasSinSpan {
+    opacity: 0.8;
+    white-space: normal;
+}
+.spanDIreccion {
+    font-weight: 500;
+    opacity: 1;
+}
+@media all and (min-width:600px) {
+    .seccionMap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }

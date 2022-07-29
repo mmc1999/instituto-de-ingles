@@ -1,0 +1,86 @@
+.footer {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.primerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divLogo {
+    display: flex;
+    gap: 5px;
+}
+.logo {
+    border-radius: 26px;
+}
+.divCursiva {
+    display: flex;
+    flex-direction: column;
+}
+.hyde {
+    font-weight: 600;
+    margin: 0px;
+    color: white;
+}
+.cursiva {
+    font-size: 11px;
+    font-style: italic;
+    margin: 0px;
+    color: white;
+}
+.ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.li {
+    list-style: none;
+}
+.enlace {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.divIconos {
+
+}
+/* segunda section */
+
+.segundaSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.segundaSection p {
+    color: white;
+    margin: 0%;
+    font-size: 12px;
+}
+.diseñadoPor {
+    font-style: italic;
+}
+.mc {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+
+@media all and (min-width:800px) {
+    .primerSection {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .ul {
+        flex-direction: row;
+        gap: 30px;
+    }
+}

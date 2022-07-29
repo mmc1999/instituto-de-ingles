@@ -34,52 +34,56 @@ const Formulario = () => {
     };
   
   const formik = useFormik({initialValues, validationSchema ,onSubmit});
-  let {handleChange,handleSubmit, values, errors} = formik;
+  let {handleChange,handleSubmit, values, errors, handleBlur, touched} = formik;
   return (
     <form onSubmit={handleSubmit} className={moduleForm.form}  >
         <div className={moduleForm.divInput}>
             <input
                 type="text"
                 onChange={handleChange}
+                onBlur={handleBlur}
                 value={values.nombre}
                 placeholder="Nombre"
                 name='nombre'
                 className={moduleForm.allInput}
             />
-            {errors.nombre && <p className={moduleForm.mensajeError}>{errors.nombre}</p>}
+            {errors.nombre && touched.nombre && <p className={moduleForm.mensajeError}>{errors.nombre}</p>}
         </div>
         <div className={moduleForm.divInput}>
             <input
                 type="email"
                 onChange={handleChange}
+                onBlur={handleBlur}
                 value={values.email}
                 placeholder="Email"
                 name='email'
                 className={moduleForm.allInput}
             />
-            {errors.email && <p className={moduleForm.mensajeError}>{errors.email}</p>}
+            {errors.email && touched.email &&  <p className={moduleForm.mensajeError}>{errors.email}</p>}
         </div>
         <div className={moduleForm.divInput}>
             <input
                 type="text"
                 onChange={handleChange}
+                onBlur={handleBlur}
                 value={values.tema}
                 placeholder="Tema"
                 name='tema'
                 className={moduleForm.allInput}
             />
-            {errors.tema && <p className={moduleForm.mensajeError}>{errors.tema}</p>}
+            {errors.tema && touched.tema && <p className={moduleForm.mensajeError}>{errors.tema}</p>}
         </div>
         <div className={moduleForm.divInput}>
             <textarea 
                 onChange={handleChange} 
+                onBlur={handleBlur}
                 value={values.comentario}
                 placeholder="Comentario"
                 className={`${moduleForm.textArea} ${moduleForm.allInput}`}
                 name="comentario"
                 
             ></textarea>
-            {errors.comentario && <p className={moduleForm.mensajeError}>{errors.comentario}</p>}  
+            {errors.comentario && touched.comentario && <p className={moduleForm.mensajeError}>{errors.comentario}</p>}  
         </div>
         
         <button type='submit' className={`${moduleForm.button} ${moduleForm.allInput}`} >Enviar</button>

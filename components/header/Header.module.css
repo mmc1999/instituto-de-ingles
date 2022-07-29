@@ -5,6 +5,7 @@
     background-color: #ffd89d;
     padding: 10px;
     width: 100%;
+    z-index: 100;
 }
 .divLogo {
     display: flex;
@@ -23,6 +24,7 @@
 .hyde {
     font-weight: 600;
     margin: 0px;
+    
 }
 .cursiva {
     font-size: 11px;

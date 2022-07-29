@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import useMenuMobile from '../../customHooks/useMenuMobile'
 import NavBar from '../navbar/NavBar'
@@ -13,7 +14,11 @@ const Header = () => {
   return (
     <header className={HeaderModule.header}>
         <div className={HeaderModule.divLogo}>
-            <Image src="/logo/logo2.png" alt="logo" width={40} height={40} className={HeaderModule.logo}/>
+            <Link href="/">
+                <a>
+                    <Image src="/logo/logo2.png" alt="logo" width={40} height={40} className={HeaderModule.logo}/>
+                </a>
+            </Link>
             <div className={HeaderModule.divCursiva}>
                 <p className={HeaderModule.hyde}>HYDE</p>
                 <p className={HeaderModule.cursiva}>English school</p>

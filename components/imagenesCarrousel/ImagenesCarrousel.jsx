@@ -3,7 +3,7 @@ import moduleCarrousel from "./imagenesCarrousel.module.css";
 
 const ImagenesCarrousel = () => {
   return (
-    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" className={`carousel slide ${moduleCarrousel.divPrincipal}`} data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
           <Image src="/carrousel/th.jfif" className={`d-block w-100 ${moduleCarrousel.imagenesCarrousel}`} alt="imagenes del instituto" width={200} height={150} layout="responsive" />

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import Footer from '../footer/Footer'
 import Header from '../header/Header'
 
 export const Layout = (({children}) => {
@@ -18,6 +19,7 @@ export const Layout = (({children}) => {
         <main>
             {children}
         </main>
+        <Footer />
     </>
   )
 })

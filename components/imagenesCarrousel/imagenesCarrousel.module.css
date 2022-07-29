@@ -1,3 +1,11 @@
-.imagenesCarrousel {
-    display: block
+
+@media all and (min-width:800px) {
+    .divPrincipal {
+        height: 70%;
+        max-width: 100%;
+        height: auto;
+    }
+    .imagenesCarrousel {
+        max-width: 100%;
+    }
 }
