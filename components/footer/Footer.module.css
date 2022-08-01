@@ -49,6 +49,10 @@
     color: white;
     font-weight: 700;
 }
+.enlace:hover, .mc:hover {
+    color: #ffce84;
+    transition: color 0.3s ease-in;
+} 
 .divIconos {
 
 }

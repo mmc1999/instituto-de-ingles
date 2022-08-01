@@ -1,0 +1,28 @@
+.divPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 40px 20px;
+}
+.logo {
+    border-radius: 45px;
+}
+.divParrafo {
+    margin-top: 20px;
+}
+.parrafo {
+    text-align: center;
+    
+    color: black;
+}
+@media all and (min-width:800px) {
+    .divPrincipal {
+        padding: 0%;
+    }
+    .parrafo {
+       font-size: 20px; 
+    }
+}

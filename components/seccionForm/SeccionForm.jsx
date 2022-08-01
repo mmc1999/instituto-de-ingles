@@ -22,18 +22,9 @@ const SeccionForm = () => {
                   </div>
               </div>
               <div className={FormModule.divDirecciones}>
-                <p className={FormModule.palabrasSinSpan}>
-                  <span className={FormModule.spanDIreccion}>Direccion:</span> 
-                  Godoy cruz 2463, La tablada
-                </p>
-                <p className={FormModule.palabrasSinSpan}>
-                  <span className={FormModule.spanDIreccion}>Telefono:</span>
-                    11 6665-9115
-                </p>
-                <p className={FormModule.palabrasSinSpan}>
-                  <span className={FormModule.spanDIreccion}>Email:</span> 
-                  hyde.english.school@outlook.es
-                </p>
+                <p className={FormModule.palabrasSinSpan}><span className={FormModule.spanDIreccion}>Direccion:</span> Godoy cruz 2463, La tablada</p> 
+                <p className={FormModule.palabrasSinSpan}><span className={FormModule.spanDIreccion}>Telefono:</span> 11 6665-9115</p>
+                <p className={FormModule.palabrasSinSpan}><span className={FormModule.spanDIreccion}>Email:</span> hyde.english.school@outlook.es</p> 
               </div>
             </div>
         </section>

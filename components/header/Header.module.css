@@ -31,3 +31,14 @@
     font-style: italic;
     margin: 0px;
 }
+@media all and (min-width:800px) {
+    .header {
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 50px;
+    }
+    .divMenuBurguer {
+        display: none;
+    }
+}

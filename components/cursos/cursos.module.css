@@ -1,0 +1,77 @@
+.seccionPrincipal {
+    padding: 20px;
+}
+.h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0px;
+}
+.divNivel {
+    display: flex;
+    flex-direction: column;
+}
+.nivel {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #f9c26f;
+    margin-bottom: 0%;
+    text-transform: uppercase;
+}
+.edad {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.objetivo {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 5px
+}
+.divMasInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100px;  
+    margin-bottom: 50px;
+}
+.masInfo {
+    padding: 15px 25px;
+    background-color: #f9c26f;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+
+}
+.masInfo:hover {
+    color: white;
+}
+@media all and (min-width:800px) {
+    .h1 {
+        margin-top: 50px;
+    }
+    .seccionNiveles {
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+    }
+    .divNivel {
+        padding:40px 100px ;
+    }
+    .nivel {
+        font-size: 35px;
+    }
+    .edad {
+        font-size: 25px;
+        opacity: 0.7;
+    }
+    .objetivo {
+        word-spacing: 5px;
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    .divMasInfo {
+        margin-bottom: 50px;
+    }
+}
