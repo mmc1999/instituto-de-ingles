@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Formulario from '../formulario/Formulario'
 import Ubicacion from '../ubicacion/Ubicacion';
 import FormModule from "./SeccionForm.module.css"
 
 const SeccionForm = () => {
   const [valor, setValor] = useState("")
+
   if (typeof window !== 'undefined') {
-    useEffect(() => setValor(window.location.pathname.slice(1)), [valor])
+    setValor(window.location.pathname.slice(1))
   }
   return (
     <section className={FormModule.seccionPrincipal}>
