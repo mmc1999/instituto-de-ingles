@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffd89d;
+    background-color: #f9c26f;
     padding: 10px;
     width: 100%;
     z-index: 100;
 }
 .divLogo {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 .logo {
     background-color: transparent;
@@ -24,7 +24,6 @@
 .hyde {
     font-weight: 600;
     margin: 0px;
-    
 }
 .cursiva {
     font-size: 11px;

@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const NavBar = ({open, closeMenu}) => {
   return (
-    <nav className={`${NavBarModule.nav} ${open ? NavBarModule.navNO : ""}`}>
+    <nav className={`${NavBarModule.nav} ${open ? NavBarModule.navNO : ""}`} onClick={closeMenu}>
             <div className={NavBarModule.divCancelar}>
                 <Image src="/iconos/cancel.png" alt='Icono de cancelar' width={20} height={20} onClick={closeMenu}/>
             </div>
@@ -23,8 +23,8 @@ const NavBar = ({open, closeMenu}) => {
                 </li>
                 <span className={NavBarModule.lineaDivisoria}></span>
                 <li className={NavBarModule.li}>
-                    <Link href="/faq">
-                        <a className={NavBarModule.enlace}>FAQs</a>
+                    <Link href="/nosotros">
+                        <a className={NavBarModule.enlace}>Nosotros</a>
                     </Link>
                 </li>
                 <span className={NavBarModule.lineaDivisoria}></span>

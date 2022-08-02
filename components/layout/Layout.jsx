@@ -14,6 +14,7 @@ export const Layout = (({children}) => {
             <meta name='description' content="Hyde english cuenta con mas de 5 años de experiencia en la materia. Cursos, clases particulares, preparacion a examenes oficiales" />
             <meta property="og:title" content="Instituto hyde englishs" />
             <meta property="og:description" content="Instituto hyde english con mas de 5 años de experiencia en la materia. Cursos, clases particulares, preparacion a examenes oficiales" />
+            <link rel="icon" type="image/jpg" href="/iconos/logo2.ico"/>
         </Head>
         <Header />
         <main>

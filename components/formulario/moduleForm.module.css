@@ -4,8 +4,8 @@
     max-width:500px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding-top: 20px;
+    gap: 25px;
+    margin-bottom:40px ;
 }
 .allInput {
     width: 100%;

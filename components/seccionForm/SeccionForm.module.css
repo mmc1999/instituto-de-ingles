@@ -53,7 +53,17 @@
 @media all and (min-width:600px) {
     .seccionMap {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
         gap: 30px;
+        margin-top: 50px;
+    }
+}
+
+@media all and (min-width:900px) {
+    .seccionPrincipal {
+        padding: 50px 200px;
+    }
+    .titleForm {
+        font-size: 45px;
     }
 }

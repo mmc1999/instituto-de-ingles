@@ -15,8 +15,26 @@
 }
 .parrafo {
     text-align: center;
-    
     color: black;
+}
+.divLogo {
+    display: flex;
+    gap: 5px;
+}
+.divCursiva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hyde {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0px;
+}
+.cursiva {
+    font-size: 13px;
+    font-style: italic;
+    margin: 0px;
 }
 @media all and (min-width:800px) {
     .divPrincipal {

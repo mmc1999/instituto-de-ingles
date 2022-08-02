@@ -6,8 +6,12 @@ import HydeModule from "./Hyde.module.css"
 const HYDE = () => {
   return (
     <div className={HydeModule.divPrincipal}>
-        <div>
+        <div className={HydeModule.divLogo}>
             <Image src="/logo/logo2.png" alt="logo" width={80} height={80} className={HydeModule.logo} />
+            <div className={HydeModule.divCursiva}>
+                <p className={HydeModule.hyde}>HYDE</p>
+                <p className={HydeModule.cursiva}>English school</p>
+            </div>
         </div>
         <div className={HydeModule.divParrafo}>
             <p className={HydeModule.parrafo}>
