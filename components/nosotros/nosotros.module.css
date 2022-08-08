@@ -11,6 +11,13 @@
     color: #f9c26f;
 }
 .divFotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
 }
 .divMasInfo {
     display: flex;
