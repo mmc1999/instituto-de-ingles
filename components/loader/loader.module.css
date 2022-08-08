@@ -1,0 +1,23 @@
+.lds {
+    display: inline-block;
+    margin: 0% auto;
+  }
+  .lds:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 6px solid black;
+    border-color: black transparent black transparent;
+    animation: lds 1.2s linear infinite;
+  }
+  @keyframes lds {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

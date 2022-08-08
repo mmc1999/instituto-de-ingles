@@ -1,0 +1,54 @@
+.divNosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+.h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f9c26f;
+}
+.divFotos {
+}
+.divMasInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100px;  
+    margin-bottom: 50px;
+}
+.masInfo {
+    padding: 15px 25px;
+    background-color: #f9c26f;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+.masInfo:hover {
+    color: white;
+}
+
+@media all and (min-width:800px) {
+    .divFotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 100px;
+    }
+    .divNosotros {
+        padding: 100px;
+        padding-bottom: 0px;
+    }
+}
+@media all and (min-width:1100px) {
+    .divFotos {
+        display: flex;
+        gap: 10px;
+        padding: 100px;
+        width: 100%;
+        flex-direction: row;
+    }
+}

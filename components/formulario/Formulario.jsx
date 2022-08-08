@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
 import moduleForm from "./moduleForm.module.css"
+import Loader from '../loader/Loader';
+import Swal from 'sweetalert2'
 
 const Formulario = () => {
+    const [loading, setLoading] = useState(false);
     const campo = "* campo requerido";
 
     const validationSchema = Yup.object().shape({
@@ -17,8 +20,8 @@ const Formulario = () => {
     const initialValues={tema: "", email: "", comentario:"", nombre: ""};
 
     const onSubmit = (values, resetForm) => {
-        console.log(values)
-        emailjs.send('service_e89k5es', 'template_kdnrdal', {
+        setLoading(true)
+        emailjs.send('service_qifhxnn', 'template_g2hrzhg', {
             nombre: values.nombre,
             comentario: values.comentario,
             tema: values.tema,
@@ -26,9 +29,11 @@ const Formulario = () => {
         }, "jMk1WAgEfrguR9vt8")
             .then((result) => {
                 formik.resetForm({values: ""});
-                //agregar el modal
+                setLoading(false)
+                Swal.fire('Mensaje enviado');
             }, (error) => {
                 console.log(error.text);
+                setLoading(false)
             });
         
     };
@@ -87,6 +92,9 @@ const Formulario = () => {
         </div>
         
         <button type='submit' className={`${moduleForm.button} ${moduleForm.allInput}`} >Enviar</button>
+        {
+            loading && <Loader />
+        }
     </form>
   )
 }
