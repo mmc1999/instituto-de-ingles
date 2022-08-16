@@ -1,13 +1,16 @@
 .sectionPrincipal {
     background-color: #fdefe4;
 }
+.divImagenes {
+    display: block;
+}
+.imagenesCarrousel {
+    max-width: 100%;
+    height: auto;
+}
 @media all and (min-width:800px) {
     .sectionPrincipal {
         display: grid;
-        grid-template-columns: 1.2fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
     } 
-    .imagenesCarrousel {
-        max-width: 100%;
-        height: auto;
-    }
 }

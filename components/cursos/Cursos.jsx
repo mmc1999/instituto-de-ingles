@@ -78,10 +78,30 @@ const Cursos = () => {
                 <Image src="/iconos/calendar.png" alt="icono de un calendario" width={100} height={100} />
                 <p className={cursosModule.titleActividades}>Actividades</p>
                 <p className={cursosModule.subtitleActividades}>Creemos que la mejor manera de aprender un idioma es en funcionamiento, por ello elaboramos algunas propuestas que llevaremos a cabo durante el año en nuestra institución.</p>
-                <div className={cursosModule.divActividades} data-aos="fade-right"></div>
-                <div className={cursosModule.divActividades} data-aos="fade-left"></div>
-                <div className={cursosModule.divActividades} data-aos="fade-right"></div>
-                <div className={cursosModule.divActividades} data-aos="fade-left"></div>
+                <div className={cursosModule.divActividades} data-aos="fade-right">
+                    <Image src="/carrousel/imagen4.jpg" alt="imagenes del instituto" width="100" height="300" layout="fill" />
+                    <div className={cursosModule.divSpan} data-aos="fade-right">
+                        <span className={cursosModule.spanPalabra}>Graduation</span>
+                    </div>
+                </div>
+                <div className={cursosModule.divActividades} data-aos="fade-left">
+                    <Image src="/carrousel/imagen9.jpg" alt="imagenes del instituto" width="300" height="300" layout="fill" />
+                    <div className={cursosModule.divSpan} data-aos="fade-left">
+                        <span className={cursosModule.spanPalabra}>Cinema</span>
+                    </div>
+                </div>
+                <div className={cursosModule.divActividades} data-aos="fade-right">
+                    <Image src="/carrousel/imagen8.jpg" alt="imagenes del instituto" width="300" height="300" layout="fill" />
+                    <div className={cursosModule.divSpan} data-aos="fade-right">
+                        <span className={cursosModule.spanPalabra}>Fair</span>
+                    </div>
+                </div>
+                <div className={cursosModule.divActividades} data-aos="fade-left">
+                    <Image src="/carrousel/imagen10.jpg" alt="imagenes del instituto" width="300" height="300" layout="fill" />
+                    <div className={cursosModule.divSpan} data-aos="fade-left">
+                        <span className={cursosModule.spanPalabra}>Halloween</span>
+                    </div>
+                </div>
             </section>
         }
         
