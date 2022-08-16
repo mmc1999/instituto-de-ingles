@@ -31,8 +31,8 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li className={FooterModule.li}>
-                        <Link href="/faq">
-                            <a className={FooterModule.enlace}>FAQs</a>
+                        <Link href="/nosotros">
+                            <a className={FooterModule.enlace}>Nosotros</a>
                         </Link>
                     </li>
                     <li className={FooterModule.li}>
